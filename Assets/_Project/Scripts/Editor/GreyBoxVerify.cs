@@ -121,6 +121,14 @@ namespace CoD.EditorTools
                 }
                 foreach (PlayerDamageFeedback feedback in root.GetComponentsInChildren<PlayerDamageFeedback>(true))
                     repaired += Ensure(feedback, "_config", game, report, ref missing);
+                // The hitstop pair's only ASSET reference. Their scene references
+                // (registry, hitstop) survive the first save; this one came back
+                // {fileID: 0} on the first rebuild after they were added, which
+                // left a kill with no weight and nothing logging why.
+                foreach (Hitstop hitstop in root.GetComponentsInChildren<Hitstop>(true))
+                    repaired += Ensure(hitstop, "_config", game, report, ref missing);
+                foreach (KillImpact killImpact in root.GetComponentsInChildren<KillImpact>(true))
+                    repaired += Ensure(killImpact, "_config", game, report, ref missing);
                 foreach (DroneSpawner spawner in root.GetComponentsInChildren<DroneSpawner>(true))
                 {
                     // Asset references in a scene are exactly the ones that go

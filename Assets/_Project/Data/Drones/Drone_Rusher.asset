@@ -15,6 +15,7 @@ MonoBehaviour:
   stableId: drone_rusher
   displayName: Rusher
   maxHealth: 100
+  weakpointMultiplier: 1
   moveSpeed: 6
   acceleration: 24
   turnSpeed: 720

@@ -15,6 +15,7 @@ MonoBehaviour:
   stableId: drone_shooter
   displayName: Shooter
   maxHealth: 75
+  weakpointMultiplier: 1
   moveSpeed: 4.2
   acceleration: 18
   turnSpeed: 540

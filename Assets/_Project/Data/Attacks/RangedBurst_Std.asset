@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d09e2a8b50341d499dfcb075af3e797, type: 3}
   m_Name: RangedBurst_Std
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   triggerRange: 16
   reactionDelay: 0.4
   aimHeightOffset: 1.2
