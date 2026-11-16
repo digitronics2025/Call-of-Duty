@@ -381,6 +381,16 @@ slow-mo, skip to wave N, damage multiplier) is a **feature** of Sandbox mode,
 not scaffolding. Keep it working — it is also the fastest way to test everything
 else. Gate it behind `#if UNITY_EDITOR || DEVELOPMENT_BUILD` for Run mode.
 
+## Agent tool permissions
+
+`.claude/settings.json` pre-approves all four Cloudflare MCP tools (`search`,
+`docs`, `whoami` and `execute`) so Claude Code sessions stop asking for them.
+This was the owner's explicit choice on 2026-11-16. `execute` can change live
+Cloudflare resources (Workers, DNS, D1, R2 and more) **without a prompt**, so the
+chat approval rules for live changes still apply: the agent must ask in chat
+before any such change. To bring the prompt back, remove
+`mcp__cloudflare_mcp__execute` from the file.
+
 <!-- BEGIN operator-conventions: regenerated from digitronics2025/claude-config -->
 ## Efficient execution — local and cloud
 
