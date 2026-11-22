@@ -1,4 +1,8 @@
-# Engineering context and design history\n\nThis is preserved project context from the 2026-11-22 instruction compaction. Status claims are a snapshot, not a substitute for current code or subsystem guides. Active rules live in docs/agent-contract.md. Verify details before relying on them.\n\n## Current state — read this first
+# Engineering context and design history
+
+This is preserved project context from the 2026-11-22 instruction compaction. Status claims are a snapshot, not a substitute for current code or subsystem guides. Active rules live in docs/agent-contract.md. Verify details before relying on them.
+
+## Current state — read this first
 
 **The game is code-complete and shippable-shaped.** Unity 6000.0.81f1 + URP,
 Personal licence active. There is a main menu, two modes, a pause menu, working
